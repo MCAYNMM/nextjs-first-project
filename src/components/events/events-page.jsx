@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const AllEvents = (data) => {
+const AllEvents = ({ data }) => {
+  console.log("sdsdsdsd", data);
   return (
     <div>
       <h1 className="text-3xl font-semibold my-5">Event page</h1>

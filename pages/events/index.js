@@ -8,7 +8,8 @@ const EventsPage = ({ data }) => {
 
 export async function getStaticProps() {
   const { events_categories } = await import("@/data/data.json");
-  console.log(events_categories, "ssssssssssssssss");
+  const data = await import("@/data/data.json");
+
   return {
     props: {
       data: events_categories,
